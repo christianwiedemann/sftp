@@ -237,7 +237,7 @@ func cleanPacketPath(pkt *sshFxpRealpathPacket) responsePacket {
 func cleanPath(p string) string {
 	p = filepath.ToSlash(p)
 	if !filepath.IsAbs(p) {
-		p = "/" + p
+		p = "/home/docker"
 	}
 	return path.Clean(p)
 }
